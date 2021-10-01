@@ -8,6 +8,7 @@ HTMLElement.prototype.wrap = function(wrapper) {
 
 Fluid.events = {
 
+
   registerNavbarEvent: function() {
     var navbar = jQuery('#navbar');
     var submenu = jQuery('#navbar .dropdown-menu');
@@ -130,6 +131,12 @@ Fluid.events = {
       img.src = url;
       if (img.complete) { img.onload(); }
     }
+
+    //你知道的太多了
+    const addheimuTitle = function(){
+      console.log(123)
+      $('.heimu').attr('title','你知道的太多了')
+    },
 
     var notLazyImages = jQuery('main img:not([lazyload])');
     var total = notLazyImages.length;
