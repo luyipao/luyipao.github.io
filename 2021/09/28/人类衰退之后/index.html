@@ -63,6 +63,11 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/indeximg-hover.css">
+<link rel="stylesheet" href="/css/scrollbar.css">
+
+
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
@@ -75,7 +80,7 @@
 </head>
 
 
-<body>
+<body><!-- hexo injector body_begin start --><div id="web_bg"></div><!-- hexo injector body_begin end -->
   <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
@@ -184,7 +189,7 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
+         style="background: url('https://cdn.jsdelivr.net/gh/luyipao/picture-base/imgs/20211007面对.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -257,6 +262,12 @@
           <article class="post-content mx-auto">
             <!-- SEO header -->
             <h1 style="display: none">人类衰退之后</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：5 天前
+                
+              </p>
             
             <div class="markdown-body">
               <h5 id="整体感受">整体感受</h5>
@@ -534,5 +545,7 @@
 <script  src="/js/boot.js" ></script>
 
 
-</body>
+<!-- hexo injector body_end start --><script src="/js/backgroundize.js"></script>
+  <link defer rel="stylesheet" href="/styles/backgroundize.css" />
+  <!-- hexo injector body_end end --></body>
 </html>
