@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://luyipao.top/heimu/</loc>
+    
+    <lastmod>2021-10-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://luyipao.top/%E9%82%A3%E4%B8%AA%E5%8F%AA%E6%98%AF%E5%89%8D%E8%BE%88%E7%9A%84%E6%AC%A7%E9%87%91%E9%87%91/</loc>
     
     <lastmod>2021-10-10</lastmod>
@@ -54,6 +61,20 @@
   
   <url>
     <loc>https://luyipao.top/tags/manga/</loc>
+    <lastmod>2021-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://luyipao.top/tags/fluid/</loc>
+    <lastmod>2021-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://luyipao.top/tags/moegirl/</loc>
     <lastmod>2021-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
