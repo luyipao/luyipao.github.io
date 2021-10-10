@@ -1,5 +1,5 @@
 function icore_init() {
-    var t = new RegExp("\\<heimu\\>(.*?)\\</heimu\\>","g");
+    var t = new RegExp("\\[heimu\\](.*?)\\[/heimu\\]","g");
     $("div.entry-content,div#morphing-content>div.page").children("p,blockquote,div.tip").each(function() {
         var n = "";
         $(this).contents().each(function() {
