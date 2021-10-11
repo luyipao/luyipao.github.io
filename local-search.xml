@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>黑幕效果</title>
+    <link href="/%E9%BB%91%E5%B9%95%E6%95%88%E6%9E%9C/"/>
+    <url>/%E9%BB%91%E5%B9%95%E6%95%88%E6%9E%9C/</url>
+    
+    <content type="html"><![CDATA[<p>在hexo-fluid中简单实现萌娘百科中的黑幕效果</p><p>搞好后发现实在是太简单了，没搞好又百思不得其解。学了一定的 html 后再搞顺了很多，而且每当碰到不懂的知识时顺便了解一下相关知识，这样见的多了就懂了。<strong>如果仅仅知其然而不知其所以然，那么即使见了一百遍也不会有太大提高。</strong></p><span id="more"></span><h4 id="介绍">介绍</h4><p>黑幕效果: 给文本添加<span class="heimu" title="你知道的太多了">黑条遮挡</span>，当鼠标放在上面(移动端是长按)是才会显示出文本，可以丰富文章样式，添加交互性和趣味性。</p><p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/First_steps/What_is_CSS">CSS</a>: 全称Cascading Style Sheets，层叠样式表。</p><h4 id="实现">实现</h4><p>​.heimu:active, .heimu:hover {</p><p>​color: #fff   // 表示鼠标移动在上面时文本变为白色</p><p>​}</p><p>​.heimu {</p><p>​background-color: #252525;</p><p>​color: #252525;</p><p>​text-shadow: none;</p><p>​transtion: color 0.3s;</p><p>​}</p><h5 id="解释">解释</h5><ul><li><p>hover: 选择元素当鼠标移动在上方。</p></li><li><p>background-color: 文本背景颜色。</p></li><li><p>color: 文本颜色。</p></li><li><p>text-shadow: 为文本增加投影。</p></li><li><p>transtion: 使黑幕效果在0.3s内逐渐显现，比较美观。</p></li><li><p><a href="https://www.colorhexa.com/252525"><code>#252525</code></a>: 表示黑色，由 14.5% 红，14.5% 绿, 14.5% 蓝构成。当然这不是唯一的黑色，你也可以选择 <code>#000000</code> ，我个人还是觉得 <code>#252525</code> 看起来更舒服。</p></li></ul><p>如果你完全没学过 <a href="https://www.w3schools.com/html/default.asp">html</a> ，我强烈建议你在实现黑幕效果前先去简单了解一下 html 语法。在你学过之后你会发现简单的黑幕实现其实非常简单。</p><h4 id="插入fluid">插入fluid</h4><p>在 <a href="https://hexo.fluid-dev.com/docs/guide/#%E8%87%AA%E5%AE%9A%E4%B9%89-js-css-html">hexo-fluid 官方配置指南</a>详细介绍了如何导入自定义 css 文件</p><blockquote><p>编写一个 css 文件<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="这里建议使用 heimu.css 作为文件名">[1]</span></a></sup>放在Blog\themes\fluid\source\css 目录下，内容即为上述代码。在_config.yml 文件中找到 coustom_css: 按格式添加该  css 文档。</p></blockquote><p>运行 <code>hexo generate</code> 生成静态文件, 在运行 <code>hexo deploy</code> 部署网址，或直接 <code>hexo g -d</code> 即可。</p><h4 id="使用">使用</h4><p>在编译文本时使用</p><p>​&lt;span class=“heimu” title=“你知道的太多了”&gt;&nbsp;你的文本 <sup id="fnref:2" class="footnote-ref"><a href="#fn:2" rel="footnote"><span class="hint--top hint--rounded" aria-label="这里的[你知道的太多了]可以自定义">[2]</span></a></sup></p><p>即可实现。但是表情包，数学公式等无法使用黑幕效果。</p><hr><p>主要参考: <a href="https://ucw.moe/archives/js-with-css-implements-heimu.html">CSS+JS轻松实现自定义黑幕效果</a></p><hr><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>这里建议使用 heimu.css 作为文件名<a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span>这里的[你知道的太多了]可以自定义<a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>fluid</tag>
+      
+      <tag>moegirl</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>看的见的女孩</title>
     <link href="/%E7%9C%8B%E5%BE%97%E8%A7%81%E7%9A%84%E5%A5%B3%E5%AD%A9/"/>
     <url>/%E7%9C%8B%E5%BE%97%E8%A7%81%E7%9A%84%E5%A5%B3%E5%AD%A9/</url>
