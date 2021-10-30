@@ -53,7 +53,7 @@
 
   <url>
     <loc>https://luyipao.top/</loc>
-    <lastmod>2021-10-24</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -61,35 +61,35 @@
   
   <url>
     <loc>https://luyipao.top/tags/Markdown/</loc>
-    <lastmod>2021-10-24</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://luyipao.top/tags/Anime/</loc>
-    <lastmod>2021-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://luyipao.top/tags/fluid/</loc>
-    <lastmod>2021-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://luyipao.top/tags/moegirl/</loc>
-    <lastmod>2021-10-24</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://luyipao.top/tags/manga/</loc>
-    <lastmod>2021-10-24</lastmod>
+    <lastmod>2021-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://luyipao.top/tags/fluid/</loc>
+    <lastmod>2021-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://luyipao.top/tags/moegirl/</loc>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
