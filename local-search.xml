@@ -4,19 +4,6 @@
   
   
   <entry>
-    <title>如何向Google插入拓展文件</title>
-    <link href="/2021/11/extract/"/>
-    <url>/2021/11/extract/</url>
-    
-    <content type="html"><![CDATA[<p>同时将文件移动到拓展程序文件默认位置</p><span id="more"></span><h1>如何向Google插入拓展文件</h1><p>你现在已经下载的拓展程序Extrat.zip，并将其解压到empty folder(1)。</p><p>在 <a href="chrome://extensions">管理拓展程序</a> 里点击<code>加载已解压的拓展程序(load unpacked)</code>  然后选择folder(1)。这时拓展程序已经添加了。<strong>为了将folder(1)转移到拓展程序专用文件夹</strong>，在该拓展程序的详情栏中找到相应的ID，将folder移动到<code>C:\Users\用户名\AppData\Local\Google\Chrome\User Data\Default\Extensions</code>。然后更改folder名为上述ID。</p><p>以上。</p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>笨蛋测验召唤兽</title>
     <link href="/2021/11/summon/"/>
     <url>/2021/11/summon/</url>

@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://luyipao.top/2021/11/extract/</loc>
-    
-    <lastmod>2021-11-22</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://luyipao.top/2021/11/summon/</loc>
     
     <lastmod>2021-11-19</lastmod>
@@ -88,7 +81,7 @@
 
   <url>
     <loc>https://luyipao.top/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -96,35 +89,35 @@
   
   <url>
     <loc>https://luyipao.top/tags/Markdown/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://luyipao.top/tags/Anime/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://luyipao.top/tags/manga/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://luyipao.top/tags/fluid/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://luyipao.top/tags/moegirl/</loc>
-    <lastmod>2021-11-22</lastmod>
+    <lastmod>2021-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
