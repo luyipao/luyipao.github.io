@@ -13,24 +13,23 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="描述">
+  <meta name="description" content="快速排序作业的总结，因为要看动漫所以写的很草率">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <meta name="description" content="神枪少女 英文名Gunslinger Girl gunslinger 是枪手的意思。我讨厌神字，宁愿翻为少女枪手。 概要 :  政府用一副义体和条件付与(类似于爱情的绝对忠诚)将濒危少女打造成杀手，并分别安排一名但当官使用，称为&quot;fratello&quot;(兄妹)。这些少女在所剩无几的生命中努力处理自己与但当官感情的故事。(即使这份感情是虚构的🤐) 人物 : 为什么二次元女生比三次元更惹人喜爱 ? 女主">
+  <meta name="description" content="快速排序作业的总结，因为要看动漫所以写的很草率">
 <meta property="og:type" content="article">
-<meta property="og:title" content="神枪少女">
-<meta property="og:url" content="https://luyipao.top/2021/11/GunsligerGirl/">
+<meta property="og:title" content="quicksort">
+<meta property="og:url" content="https://luyipao.top/2021/12/quicksort/">
 <meta property="og:site_name" content="月岛">
-<meta property="og:description" content="神枪少女 英文名Gunslinger Girl gunslinger 是枪手的意思。我讨厌神字，宁愿翻为少女枪手。 概要 :  政府用一副义体和条件付与(类似于爱情的绝对忠诚)将濒危少女打造成杀手，并分别安排一名但当官使用，称为&quot;fratello&quot;(兄妹)。这些少女在所剩无几的生命中努力处理自己与但当官感情的故事。(即使这份感情是虚构的🤐) 人物 : 为什么二次元女生比三次元更惹人喜爱 ? 女主">
+<meta property="og:description" content="快速排序作业的总结，因为要看动漫所以写的很草率">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.myanimelist.net/images/characters/9/99556.jpg?_gl=1*8fkvs3*_ga*MTE3NDA5OTkyMC4xNjM0ODI1NDEw*_ga_26FEP9527K*MTYzNjM4MjUyNy4yMC4wLjE2MzYzODI1MjcuNjA.">
-<meta property="article:published_time" content="2021-11-08T15:41:27.000Z">
-<meta property="article:modified_time" content="2021-11-08T15:42:55.038Z">
+<meta property="article:published_time" content="2021-12-15T16:08:42.000Z">
+<meta property="article:modified_time" content="2021-12-15T16:11:06.589Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="algorithm">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cdn.myanimelist.net/images/characters/9/99556.jpg?_gl=1*8fkvs3*_ga*MTE3NDA5OTkyMC4xNjM0ODI1NDEw*_ga_26FEP9527K*MTYzNjM4MjUyNy4yMC4wLjE2MzYzODI1MjcuNjA.">
   
-  <title>神枪少女 - 月岛</title>
+  <title>quicksort - 月岛</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -208,7 +207,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="神枪少女">
+            <span class="h2" id="subtitle" title="quicksort">
               
             </span>
 
@@ -218,8 +217,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-11-08 23:41" pubdate>
-        2021年11月8日 晚上
+      <time datetime="2021-12-16 00:08" pubdate>
+        2021年12月16日 凌晨
       </time>
     </span>
   
@@ -229,7 +228,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      940 字
+      1.9k 字
     </span>
   
 
@@ -238,7 +237,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      3 分钟
+      6 分钟
     </span>
   
 
@@ -275,44 +274,48 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">神枪少女</h1>
+            <h1 style="display: none">quicksort</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：1 个月前
+                  本文最后更新于：5 分钟前
                 
               </p>
             
             <div class="markdown-body">
-              <h1>神枪少女</h1>
-<p>英文名<a target="_blank" rel="noopener" href="https://myanimelist.net/anime/134/Gunslinger_Girl"><code>Gunslinger Girl</code></a> gunslinger 是枪手的意思。我讨厌<code>神</code>字，宁愿翻为<code>少女枪手</code>。</p>
-<p>概要 :  政府用一副义体和<strong>条件付与</strong>(类似于爱情的绝对忠诚)将濒危少女打造成杀手，并分别安排一名但当官使用，称为"fratello"(兄妹)。这些少女在所剩无几的生命中<strong>努力处理自己与但当官感情</strong>的故事。(即使这份感情是虚构的🤐)</p>
-<h3 id="人物">人物 :</h3>
-<p>为什么二次元女生比三次元更惹人喜爱 ?</p>
-<p>女主角<strong>无条件无条件无条件</strong>无条件的喜欢男主，观众从上帝视角掌握了更多的信息后再看男女主各自揣测，互相试探，你来我往，所以看起来很爽。(原因未知)</p>
-<p>现实生活中，女生通常对男主毫无兴趣，甚至厌烦。此外，男主并不知道对方的想法，信息有限，在这样信马由缰的思索中就会产生: “人生三大错觉”。现实动漫中，观众跟男主所拥有的信息是一致的，就仿佛被抛进了现实中。比如晚安布布，几乎没有爱子的特写，完全没有心理描写。不知爱子的想法，只能煎熬的揣测思索，辗转反侧，思前想后不是布布，正是屏幕前的每一位观众。但是爱子甚至根本不喜欢你，她只是需要一个可以依靠的人，而你恰好充当了这个角色，一个特别但普通的存在。这种令人痛苦的作品注定不会流行，但至少我会记住它。</p>
-<p>六名少女，各具特点。我最喜欢的是这位褐色皮肤的，虽然说这种事情很容易暴露自己的性癖，不过林子大了什么性癖都有，你也不好猜我的是那种。</p>
-<img src="https://cdn.myanimelist.net/images/characters/9/99556.jpg?_gl=1*8fkvs3*_ga*MTE3NDA5OTkyMC4xNjM0ODI1NDEw*_ga_26FEP9527K*MTYzNjM4MjUyNy4yMC4wLjE2MzYzODI1MjcuNjA." srcset="/img/loading.gif" lazyload style="zoom:50%;"> 
-<h3 id="情节">情节</h3>
-<p>名为<code>持枪少女</code>，但是换成<code>扫地少女</code>问题也不大，核心是<strong>努力处理自己与但当官感情</strong>！看着有种被尊敬的感觉，<code>尊重</code>听起来不明所以，我再多举几个例子 :</p>
-<blockquote>
-<p>笨蛋测验召唤兽。虽然搞笑但有种被羞辱之感。日常也有，但是要轻一些。</p>
-<p>中二病也要谈恋爱。一种羞耻的感觉。</p>
-<p>紫罗兰永恒花园。无病呻吟。</p>
-</blockquote>
-<p>你现在明白这种尊重的感觉是什么了吗？</p>
-<p>古话说"乐而不淫，哀而不伤"。00年代初期和90年代的很多作品都是这种风格。</p>
-<h3 id="画风">画风</h3>
-<p>画风类灰羽联盟，但画质比灰羽联盟要好，细节处理上也要好，角色也要可爱，比黑羽联盟看着爽多了。不过灰羽更引人回味。一是题材更偏向哲学，二是设定少的一批，留给读者纵横跋扈的想象空间。</p>
-<h3 id="主题">主题</h3>
-<p>我已经不魔怔了，不要让我想这些有的没的了。🥵🥵🥵</p>
-<p>1-7 2-11 3-20 4-6-7 5-11 8-18 9-8-21 10-4  11-11-17 13</p>
+              <p>快速排序作业的总结，因为要看动漫所以写的很草率</p>
+<span id="more"></span>
+<h1>QuickSort</h1>
+<h3 id="vector">vector</h3>
+<h4 id="元素交换">元素交换</h4>
+<figure class="highlight stylus"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">swap</span><span class="hljs-params">(vector[i]，vector[j])</span></span><br></code></pre></td></tr></tbody></table></figure>
+<h4 id="遍历方式">遍历方式</h4>
+<figure class="highlight cpp"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> i : num)<br>	cout &lt;&lt; i &lt;&lt; endl;<br></code></pre></td></tr></tbody></table></figure>
+<h3 id="ctime">ctime</h3>
+<p>CLOCKS_PER_SEC, 它用来表示一秒钟会有多少个时钟计时单元。</p>
+<figure class="highlight cpp"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;ctime&gt;</span></span><br><span class="hljs-keyword">clock_t</span> startTime, endTime;<br>startTime = <span class="hljs-built_in">clock</span>();<br>endTime = <span class="hljs-built_in">clock</span>();<br></code></pre></td></tr></tbody></table></figure>
+<h2 id="三点取中">三点取中</h2>
+<figure class="highlight arduino"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><code class="hljs arduino"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * @file QuickSort.h</span><br><span class="hljs-comment"> * @author 鲁硕 (3200101874@zju.edu.cn)</span><br><span class="hljs-comment"> * @date 2021-12-15</span><br><span class="hljs-comment"> * </span><br><span class="hljs-comment"> * @brief QuickSort的实现</span><br><span class="hljs-comment"> * </span><br><span class="hljs-comment"> */</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;vector&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MAX_LENGTH 10</span><br><br><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * @brief 三数取中选择</span><br><span class="hljs-comment"> * </span><br><span class="hljs-comment"> * @tparam Compareble </span><br><span class="hljs-comment"> * @param a </span><br><span class="hljs-comment"> * @param left </span><br><span class="hljs-comment"> * @param right </span><br><span class="hljs-comment"> * @return Compareble </span><br><span class="hljs-comment"> */</span><br><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> Compareble&gt;<br><span class="hljs-function">Compareble <span class="hljs-title">medianPivot</span><span class="hljs-params">(std::vector&lt;Compareble&gt;&amp; a,<span class="hljs-keyword">int</span> left,<span class="hljs-keyword">int</span> right)</span></span><br><span class="hljs-function"></span>{<br>  <span class="hljs-keyword">int</span> center = (left + right) / <span class="hljs-number">2</span>;<br>  <span class="hljs-keyword">if</span>(a[center] &lt; a [left])<br>    <span class="hljs-built_in">swap</span>(a[left], a[center]);<br>  <span class="hljs-keyword">if</span>(a[right] &lt; a [left])<br>    <span class="hljs-built_in">swap</span>(a[left], a[right]);<br>  <span class="hljs-keyword">if</span>(a[right] &lt; a [center])<br>    <span class="hljs-built_in">swap</span>(a[center], a[right]);<br><br>  <span class="hljs-built_in">swap</span>(a[center], a[right - <span class="hljs-number">1</span>]);<br>  <span class="hljs-keyword">return</span> a[right - <span class="hljs-number">1</span>];<br><span class="hljs-meta">#rand swap(i, right)</span><br><span class="hljs-keyword">return</span> a[right]<br>}<br><br><br><br><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> Compareble&gt;<br><span class="hljs-keyword">int</span> <span class="hljs-built_in">mediansort</span>(std::vector&lt;Compareble&gt;&amp; items,<span class="hljs-keyword">int</span> left,<span class="hljs-keyword">int</span> right)<br>{<br>  <span class="hljs-keyword">if</span>(right - left + <span class="hljs-number">1</span> &gt; MAX_LENGTH)<br>    {<br><br>      <span class="hljs-keyword">int</span> i = left;<span class="hljs-meta">#rand left-1</span><br>      <span class="hljs-keyword">int</span> j = right <span class="hljs-number">-1</span>;<span class="hljs-meta">#rand right</span><br>      <span class="hljs-keyword">const</span> Compareble &amp; pivot = <span class="hljs-built_in">medianPivot</span>(items, left, right);<br><br>      <span class="hljs-keyword">while</span>(<span class="hljs-literal">true</span>)<br>	{<br>	  <span class="hljs-keyword">while</span> (items[++i] &lt; pivot)<br>	  {}<br>	  <span class="hljs-keyword">while</span> (items[--j] &gt; pivot)<br>	  {}<br>	  <span class="hljs-keyword">if</span> (i &lt; j)<br>	    <span class="hljs-built_in">swap</span>(items[i], items[j]);<br>	  <span class="hljs-keyword">else</span><br>	    <span class="hljs-keyword">break</span>;<br>	}<br>      <span class="hljs-built_in">swap</span>(items[i], items[right - <span class="hljs-number">1</span>]);<span class="hljs-meta">#rand i,right</span><br><br>      <span class="hljs-built_in">mediansort</span>(items, left, i - <span class="hljs-number">1</span>);<span class="hljs-meta">#rand left，i-1</span><br>      <span class="hljs-built_in">mediansort</span>(items, i + <span class="hljs-number">1</span>, right);<span class="hljs-meta">#rand i+1 right</span><br>    }<br>  <span class="hljs-keyword">else</span><br>    <span class="hljs-built_in">insertSort</span>(items, left, right);<br>}<br><br><br><br><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> Compareble&gt;<br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">medianSort</span><span class="hljs-params">(std::vector&lt;Compareble&gt;&amp; items)</span></span><br><span class="hljs-function"></span>{<br>  <span class="hljs-built_in">mediansort</span>(items, <span class="hljs-number">0</span>, items.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>);<br>}<br><br><br></code></pre></td></tr></tbody></table></figure>
+<p>经过该算法可以使得left center right 的大小按小到大重排。取center为Pivot</p>
+<p>left &lt;= Pivot &lt;= right</p>
+<p>接下来只需分析left+1 — right-1</p>
+<p>又center与right-1 互换</p>
+<p>接下来只需分析left+1 — right-2</p>
+<p>排序后将大于pivot的最小值i与right-1呼唤，那么这时i对应的就是pivot,接着分析sort(left，i - 1) sort(i+1, right)</p>
+<h2 id="随机法">随机法</h2>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/algorithm/">algorithm</a>
+                    
+                  </div>
                 
               </div>
               
@@ -327,9 +330,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/11/summon/">
+                      <a href="/2021/12/living/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">笨蛋测验召唤兽</span>
+                        <span class="hidden-mobile">活人</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -337,8 +340,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/11/exploitation_film/">
-                        <span class="hidden-mobile">剥削电影</span>
+                      <a href="/2021/12/JOJO/">
+                        <span class="hidden-mobile">JOJO石之海</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
