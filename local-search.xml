@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>配置wsl和latex使用</title>
+    <link href="/2022/06/null/"/>
+    <url>/2022/06/null/</url>
+    
+    <content type="html"><![CDATA[<h2 id="wsl">wsl</h2><p>事实上配置wsl按照这个来最好https://docs.microsoft.com/en-us/windows/wsl</p><p>###配置账号</p><p>microsof的文档会提供不同版本的Ubuntu来使用,直接用是最方便快捷的. 下好Ubuntu后配置账号信息,这里本来我懒得设密码,不过不设密码是不行的,请设一个简单的密码,因为会经常需要输入.这里补充一个修改密码的方法:"Open PowerShell and enter the root of your default WSL distribution using the command: wsl -u root.If you need to update the forgotten password on a distribution that is not your default, use the command: wsl -d Debian -u root, replacing Debian with the name of your targeted distribution."不过我不是说了选简单的密码吗,怎么还会忘…</p><p>###注意长更新</p><p>我今天遇到了一个因为没更新sources.list全都失效结果无法下载软件的问题.可以通过下面两条命令来直接手动改,至于改成什么,找镜像站吧.</p><p>sudo cp /etc/apt/sources.list /etc/apt/sources.list_backup</p><p>sudo emacs(vim) /etc/apt/sources.list</p><p>或者直接sudo apt update &amp;&amp; sudo apt upgrade</p><p>话说这两个不确定,总之如果出现sudo apt install时出现404Not Found等问题可以第一种是可行的,不过最好试试第二种</p><h3 id="file-storage">file storage</h3><p>liunx:</p><p>\wsl$&lt;DistroName&gt;\home&lt;UserName&gt;\Project</p><p>windows:</p><p>mnt/c/Users/<username>/Project$</username></p><p>通常来讲你用那个系统的工具就放在哪里最快.</p><h3 id="starting-directory">starting directory</h3><p>建议看官方原文</p><p><a href="https://docs.microsoft.com/en-us/windows/terminal/customize-settings/profile-general#starting-directory">https://docs.microsoft.com/en-us/windows/terminal/customize-settings/profile-general#starting-directory</a></p><h2 id="latex语法">latex语法</h2><p>$…$ <code>...</code>就是latex语言. $$…$$ 作用为$…$加上新开一行并置中.</p><p>注意<code>...</code>是不能有汉语的,那么如果想在一串latex语言中插入汉字呢? 可以用\mbox{…} <code>...</code>表示汉字. 注意mbox会将花括号内容强制用文本模式输出,因此常常会导致排版问题.<br>\frac{}{}  分号<br>\leq 小于等于号<br>…这些语法随便搜一下就有了<br>\verb用纯文本形式输出,写代码的时候,用lstlisting的效果很差劲.<br>\begin{verbatim}<br>\end{verbatim}</p><h3 id="文献引用">文献引用</h3><p>编译main.tex文件的步骤,具体环境下的实现可能有所差异,可参考链接<br>xelatex main<br>bibtex main<br>xelatex main<br>xelatex main<br>参考资料:<a href="https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex#Bibliography:">https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex#Bibliography:</a><em>just_a_list_of</em>.5Cbibitems</p><h3 id="超链接">超链接</h3><p>usepackage{hyperref},注意该package通常最后一个添加</p><p>\hypersetup{<br>colorlinks=true,<br>linkcolor=blue,<br>filecolor=magenta,<br>urlcolor=cyan,<br>}<br>参考资料:<a href="https://www.overleaf.com/learn/latex/Hyperlinks#Introduction">https://www.overleaf.com/learn/latex/Hyperlinks#Introduction</a></p><h3 id="参考文献">参考文献</h3><p>默认采用IEEEtrran格式,该格式能自动按照引用顺序排序,并且各个文献的fields也会自动排序,相当于不需要考虑顺序问题,实现一辈子一个bib文件.</p><p>\cite{<entry of="" the="" name="">}(entry 内不要有空格,不要有两个相同的entry. 原因?知道就行了)<br>\bibliographystyle{IEEEtran}<br>\bibliography{&lt;bib文件名,无需拓展名&gt;}</entry></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>活人</title>
     <link href="/2021/12/living/"/>
     <url>/2021/12/living/</url>
