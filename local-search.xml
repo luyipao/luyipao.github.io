@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>clang failed with error 1: /usr/bin/clang -fsyntax-only -Xclang -code-completion-macros -x c++ -Xclang -code-completion-at 错误处理</title>
+    <link href="/2022/09/clangCompany/"/>
+    <url>/2022/09/clangCompany/</url>
+    
+    <content type="html"><![CDATA[<p>emacs，c++，company在class中写函数sin时跳出<a href="https://imgur.com/a/rjPrgtr">错误</a></p><figure class="highlight routeros"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">clang failed with <span class="hljs-builtin-name">error</span> 1: /usr/bin/clang -fsyntax-only -Xclang -code-completion-macros -x c++ -Xclang <span class="hljs-attribute">-code-completion-at</span>=***<br></code></pre></td></tr></tbody></table></figure><p>参考<a href="https://emacs.stackexchange.com/questions/26269/company-mode-clang-error?newreg=8ad12c34fbde468093632723cd7f77ba">这篇回答</a>可知是<code>usr/bin/clang</code>出现问题。<code>clang</code>编译c语言，<code>clang++</code>编译c++。首先尝试将<code>company-clang-executable</code>里的<code> (executable-find "clang")</code>改为<code>(executable-find "clang++")</code>，如果依然不行查看你的clang版本，可能是 由于版本不适配造成的。在我的环境下安装clang-3.9，在<code>usr/bin</code>目录运行</p><figure class="highlight apache"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">sudo</span> cp clang clang~ ;保存备份文件<br><span class="hljs-attribute">sudo</span> cp clang-<span class="hljs-number">3</span>.<span class="hljs-number">9</span> clang<br><span class="hljs-attribute">sudo</span> cp clang++ clang++~ ;保存备份<br><span class="hljs-attribute">sudo</span> cp clang++-<span class="hljs-number">3</span>.<span class="hljs-number">9</span> clang++<br></code></pre></td></tr></tbody></table></figure><p>然后可以正常运行。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>clash_TUN无法连接网络</title>
     <link href="/2022/09/clashtun/"/>
     <url>/2022/09/clashtun/</url>
