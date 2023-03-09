@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>红米AC2100刷openwrt</title>
+    <link href="/2023/03/null/"/>
+    <url>/2023/03/null/</url>
+    
+    <content type="html"><![CDATA[<h1>Redmi ac2100刷openwrt指南</h1><h3 id="准备工作">准备工作</h3><p>路由器wan口连网，lan连电脑。</p><p>找到符合你需求的openwrt，不知道自己需要什么的可以考虑https://vvmi.net/archives/openwrt-ac2100/提供的固件。</p><p>下载https://www.right.com.cn/forum/thread-8256657-1-1.html中提供的breed。</p><p>下载https://www.right.com.cn/forum/thread-4054150-1-1.html提供的部件。我在校园网环境下刷入时，无法连接外网，因此要提前下载。</p><h3 id="刷入breed">刷入breed</h3><p>按https://www.right.com.cn/forum/thread-4054150-1-1.html的步骤，严格按照要求操作，刷入breed。刷入的breed不是提供的版本，而是上面下载的版本。我在使用该贴版本时输入openwrt时遇到问题，breed的中的环境变量有数十条而非某些贴子中的空白。</p><h3 id="刷入openwrt">刷入openwrt</h3><p>按照教程https://www.right.com.cn/forum/thread-4025861-1-1.html刷入你的openwrt。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>关于讨论</title>
     <link href="/2022/10/fight/"/>
     <url>/2022/10/fight/</url>
