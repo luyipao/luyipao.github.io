@@ -16,19 +16,20 @@
   <meta name="description" content="描述">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <meta name="description" content="Clash TUN clash正常打开tun模式后，在控制面板\所有控制面板项\网络连接可以查看到clash TunnelIPv4无网络访问权限。 可以通过clash的connections来判断具体连接情况。 在一切设置默认的情况下，可能由于特殊的网卡驱动导致tun模式无法正常工作。 最终更改TUN Mode setting中DNS服务器为本地DNS解决了问题，因为默认服务器已经被污染了。">
+  <meta name="description" content="预备知识 常见DNS服务器 盘点国内外优秀公共DNS  8.8.8.8 Google 211.140.11.66 电信 1.1.1.1 Cloudflare（我挺讨厌这家公司） 119.29.29.29 移动 114.114.114.114   114dns  如何获取本地dns cmd中运行ipconfig &#x2F;all后自己查。 ip.skk.moe真是我用过最好的ip查询工具。  解决操作 cl">
 <meta property="og:type" content="article">
-<meta property="og:title" content="clash_TUN无法连接网络">
+<meta property="og:title" content="clash TUN无法连接网络">
 <meta property="og:url" content="https://luyipao.top/2022/09/clashtun/">
 <meta property="og:site_name" content="月岛">
-<meta property="og:description" content="Clash TUN clash正常打开tun模式后，在控制面板\所有控制面板项\网络连接可以查看到clash TunnelIPv4无网络访问权限。 可以通过clash的connections来判断具体连接情况。 在一切设置默认的情况下，可能由于特殊的网卡驱动导致tun模式无法正常工作。 最终更改TUN Mode setting中DNS服务器为本地DNS解决了问题，因为默认服务器已经被污染了。">
+<meta property="og:description" content="预备知识 常见DNS服务器 盘点国内外优秀公共DNS  8.8.8.8 Google 211.140.11.66 电信 1.1.1.1 Cloudflare（我挺讨厌这家公司） 119.29.29.29 移动 114.114.114.114   114dns  如何获取本地dns cmd中运行ipconfig &#x2F;all后自己查。 ip.skk.moe真是我用过最好的ip查询工具。  解决操作 cl">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-09-16T13:33:51.000Z">
-<meta property="article:modified_time" content="2022-09-16T13:37:54.673Z">
+<meta property="article:modified_time" content="2023-03-30T17:12:00.487Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="tech">
 <meta name="twitter:card" content="summary_large_image">
   
-  <title>clash_TUN无法连接网络 - 月岛</title>
+  <title>clash TUN无法连接网络 - 月岛</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -206,7 +207,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="clash_TUN无法连接网络">
+            <span class="h2" id="subtitle" title="clash TUN无法连接网络">
               
             </span>
 
@@ -227,7 +228,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      189 字
+      875 字
     </span>
   
 
@@ -236,7 +237,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1 分钟
+      3 分钟
     </span>
   
 
@@ -273,26 +274,64 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">clash_TUN无法连接网络</h1>
+            <h1 style="display: none">clash TUN无法连接网络</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：6 个月前
+                  本文最后更新于：2 小时前
                 
               </p>
             
             <div class="markdown-body">
-              <p>Clash TUN</p>
+              <h2 id="预备知识">预备知识</h2>
+<h3 id="常见DNS服务器">常见DNS服务器</h3>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/53958870">盘点国内外优秀公共DNS</a></p>
+<ul>
+<li>8.8.8.8 Google</li>
+<li>211.140.11.66 电信</li>
+<li>1.1.1.1 Cloudflare（我挺讨厌这家公司）</li>
+<li>119.29.29.29 移动</li>
+<li>114.114.114.114   114dns</li>
+</ul>
+<h3 id="如何获取本地dns">如何获取本地dns</h3>
+<p>cmd中运行<code>ipconfig /all</code>后自己查。</p>
+<p><a target="_blank" rel="noopener" href="https://ip.skk.moe">ip.skk.moe</a>真是我用过最好的ip查询工具。</p>
+<iframe src="https://ip.skk.moe/simple" style="width: 100%; border: 0"></iframe>
+<h2 id="解决操作">解决操作</h2>
+<p><a target="_blank" rel="noopener" href="https://docs.cfw.lbyczf.com/contents/tun.html#windows">clash TUN mode</a></p>
 <p>clash正常打开tun模式后，在<code>控制面板\所有控制面板项\网络连接</code>可以查看到<code>clash Tunnel</code>IPv4<code>无网络访问权限</code>。</p>
 <p>可以通过clash的connections来判断具体连接情况。</p>
 <p>在一切设置默认的情况下，可能由于特殊的网卡驱动导致tun模式无法正常工作。</p>
-<p>最终更改<code>TUN Mode</code> setting中DNS服务器为本地DNS解决了问题，因为默认服务器已经被污染了。</p>
+<p>最终更改<code>TUN Mode</code> setting中DNS服务器为本地DNS和主流DNS。</p>
+<h2 id="分析过程">分析过程</h2>
+<h3 id="校园网">校园网</h3>
+<p>开启<code>tun</code>后，校园网dns服务器设为<code>1.1.1.1</code>。校内网站和校外网站均无法打开。</p>
+<p>校网dns设为自动获取，cmd中运行<code>ipconfig /all</code>查看校网分配到的dns<code>6.6.6.6</code>(当然不是真的)，然后在clash <code>tun mode</code>中添加学校的dns服务器后，国内外及校网均可正常打开。</p>
+<h3 id="手机热点">手机热点</h3>
+<p>手机dns为<code>211.140.11.66</code></p>
+<p>首先把clash<code>tun mode</code>里所有dns服务器删除，但是国内外网站都可以打开，只是国外巨慢。校内网站当然是没法打开的。</p>
+<p><code>tun mode</code>添加dns<code>1.1.1.1</code>国外网站无法打开。clash log显示</p>
+<blockquote>
+<p>connect error: all DNS requests failed, first error: context deadline exceeded.</p>
+</blockquote>
+<p><code>tun mode</code>添加<code>211.140.11.66</code>后国内外网站均可打开。并且速度正常（指不会卡顿）。</p>
+<p>删除<code>tun mode</code>中所有dns，仅添加<code>8.8.8.8</code>，国内外网站打开正常。youtube正常，gmail卡顿，不过gmail卡顿好像是另一个问题</p>
+<p>但是连手机热点时还是wifi图标，虽然clash<code>connections</code>里显示的走的是tun。</p>
+<h2 id="总结">总结</h2>
+<p>cloudflare 我日你先人。</p>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/tech/">tech</a>
+                    
+                  </div>
                 
               </div>
               
@@ -340,7 +379,7 @@
     Fluid.utils.loadComments('#comments', function() {
       Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js', function() {
         var options = Object.assign(
-          {"envId":"https://statistical-date-t73uurpip-statistical-date.vercel.app","region":"ap-shanghai","path":"window.location.pathname"},
+          {"envId":"https://statistical-date-j2iq7m1zj-statistical-date.vercel.app","region":"ap-shanghai","path":"window.location.pathname"},
           {
             el: '#twikoo',
             path: 'window.location.pathname',
