@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>NAS搭建</title>
+    <link href="/2023/03/nasbulid/"/>
+    <url>/2023/03/nasbulid/</url>
+    
+    <content type="html"><![CDATA[<span id="more"></span><h1>NAS搭建</h1><h2 id="成品机还是DIY">成品机还是DIY</h2><p>成品机价格较贵，且配置未必很好。而且我也用不到太高级的装置。总而言之，买了一台矿渣星际蜗牛，该机器在2019年二手买入，到我手上已经是三手。价格却高了不少。</p><h2 id="安装黑群晖">安装黑群晖</h2><p>参考高纳斯的教程：<a href="https://wp.gxnas.com/10940.html/comment-page-1">黑群晖DSM7.X安装教程</a></p><h3 id="准备工具">准备工具</h3><p>一个路由器，一台显示器（用于更改BIOS）等</p><h3 id="注意事项">注意事项</h3><ul><li>**当你进行到41步，也就是安装系统安装包时，这时要断网直到重启完成。**我就是因为这卡了好久。</li><li>在淘宝上以一顿饭钱可以买到全洗白码。在某些黑群晖交流群里有时可以捡到洗白码。</li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>IT</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>铃芽之旅</title>
     <link href="/2023/03/suzume/"/>
     <url>/2023/03/suzume/</url>
@@ -65,7 +84,7 @@
     <link href="/2023/03/nasinstalldsm/"/>
     <url>/2023/03/nasinstalldsm/</url>
     
-    <content type="html"><![CDATA[<p>我把注意事项放在后面就好比《葵花宝典》了；放在前面又不知道说的是什么。</p><span id="more"></span><h1>NAS刷黑群晖DSM7.x</h1><h2 id="成品机还是DIY">成品机还是DIY</h2><p>成品机价格较贵，且配置未必很好。而且我也用不到太高级的装置。总而言之，买了一台矿渣星际蜗牛，该机器在2019年二手买入，到我手上已经是三手。价格却高了不少。</p><h2 id="安装黑群晖">安装黑群晖</h2><p>参考高纳斯的教程：<a href="https://wp.gxnas.com/10940.html/comment-page-1">黑群晖DSM7.X安装教程</a></p><h3 id="准备工具">准备工具</h3><p>一个路由器，一台显示器（用于更改BIOS）等</p><h3 id="注意事项">注意事项</h3><ul><li>**当你进行到41步，也就是安装系统安装包时，这时要断网直到重启完成。**我就是因为这卡了好久。</li><li>在淘宝上以一顿饭钱可以买到全洗白码。在某些黑群晖交流群里有时可以捡到洗白码。</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>注意事项应该放在前面还是后面？</p><span id="more"></span><h1>NAS刷黑群晖DSM7.x</h1><h2 id="成品机还是DIY">成品机还是DIY</h2><p>成品机价格较贵，且配置未必很好。而且我也用不到太高级的装置。总而言之，买了一台矿渣星际蜗牛，该机器在2019年二手买入，到我手上已经是三手。价格却高了不少。</p><h2 id="安装黑群晖">安装黑群晖</h2><p>参考高纳斯的教程：<a href="https://wp.gxnas.com/10940.html/comment-page-1">黑群晖DSM7.X安装教程</a></p><h3 id="准备工具">准备工具</h3><p>一个路由器，一台显示器（用于更改BIOS）等</p><h3 id="注意事项">注意事项</h3><ul><li>**当你进行到41步，也就是安装系统安装包时，这时要断网直到重启完成。**我就是因为这卡了好久。</li><li>在淘宝上以一顿饭钱可以买到全洗白码。在某些黑群晖交流群里有时可以捡到洗白码。</li></ul>]]></content>
     
     
     
@@ -129,7 +148,7 @@
     <link href="/2022/09/clashtun/"/>
     <url>/2022/09/clashtun/</url>
     
-    <content type="html"><![CDATA[<h2 id="预备知识">预备知识</h2><h3 id="常见DNS服务器">常见DNS服务器</h3><p><a href="https://zhuanlan.zhihu.com/p/53958870">盘点国内外优秀公共DNS</a></p><ul><li>8.8.8.8 Google</li><li>211.140.11.66 电信</li><li>1.1.1.1 Cloudflare（我挺讨厌这家公司）</li><li>119.29.29.29 移动</li><li>114.114.114.114   114dns</li></ul><h3 id="如何获取本地dns">如何获取本地dns</h3><p>cmd中运行<code>ipconfig /all</code>后自己查。</p><p><a href="https://ip.skk.moe">ip.skk.moe</a>真是我用过最好的ip查询工具。</p><iframe src="https://ip.skk.moe/simple" style="width: 100%; border: 0"></iframe><h2 id="解决操作">解决操作</h2><p><a href="https://docs.cfw.lbyczf.com/contents/tun.html#windows">clash TUN mode</a></p><p>clash正常打开tun模式后，在<code>控制面板\所有控制面板项\网络连接</code>可以查看到<code>clash Tunnel</code>IPv4<code>无网络访问权限</code>。</p><p>可以通过clash的connections来判断具体连接情况。</p><p>在一切设置默认的情况下，可能由于特殊的网卡驱动导致tun模式无法正常工作。</p><p>最终更改<code>TUN Mode</code> setting中DNS服务器为本地DNS和主流DNS。</p><h2 id="分析过程">分析过程</h2><h3 id="校园网">校园网</h3><p>开启<code>tun</code>后，校园网dns服务器设为<code>1.1.1.1</code>。校内网站和校外网站均无法打开。</p><p>校网dns设为自动获取，cmd中运行<code>ipconfig /all</code>查看校网分配到的dns<code>6.6.6.6</code>(当然不是真的)，然后在clash <code>tun mode</code>中添加学校的dns服务器后，国内外及校网均可正常打开。</p><h3 id="手机热点">手机热点</h3><p>手机dns为<code>211.140.11.66</code></p><p>首先把clash<code>tun mode</code>里所有dns服务器删除，但是国内外网站都可以打开，只是国外巨慢。校内网站当然是没法打开的。</p><p><code>tun mode</code>添加dns<code>1.1.1.1</code>国外网站无法打开。clash log显示</p><blockquote><p>connect error: all DNS requests failed, first error: context deadline exceeded.</p></blockquote><p><code>tun mode</code>添加<code>211.140.11.66</code>后国内外网站均可打开。并且速度正常（指不会卡顿）。</p><p>删除<code>tun mode</code>中所有dns，仅添加<code>8.8.8.8</code>，国内外网站打开正常。youtube正常，gmail卡顿，不过gmail卡顿好像是另一个问题</p><p>但是连手机热点时还是wifi图标，虽然clash<code>connections</code>里显示的走的是tun。</p><h2 id="总结">总结</h2><p>cloudflare 我日你先人。</p>]]></content>
+    <content type="html"><![CDATA[<p>让我们祈祷一切正常。</p><span id="more"></span><h2 id="预备知识">预备知识</h2><h3 id="常见DNS服务器">常见DNS服务器</h3><p><a href="https://zhuanlan.zhihu.com/p/53958870">盘点国内外优秀公共DNS</a></p><ul><li>8.8.8.8 Google</li><li>211.140.11.66 电信</li><li>1.1.1.1 Cloudflare（我挺讨厌这家公司）</li><li>119.29.29.29 移动</li><li>114.114.114.114   114dns</li></ul><h3 id="如何获取本地dns">如何获取本地dns</h3><p>连接网络A, 在<code>更改网络适配器</code>设置里打开A的<code>属性</code>, 将其中IPv4的DNS改为<code>自动获取DNS服务器地址</code>, 然后cmd中运行<code>ipconfig /all</code>后查看dns server。</p><p><a href="https://ip.skk.moe">ip.skk.moe</a>真是我用过最好的ip查询工具。</p><iframe src="https://ip.skk.moe/simple" style="width: 100%; border: 0"></iframe><h2 id="解决操作">解决操作</h2><p><a href="https://docs.cfw.lbyczf.com/contents/tun.html#windows">clash TUN mode</a></p><p>clash正常打开tun模式后，在<code>控制面板\所有控制面板项\网络连接</code>可以查看到<code>clash Tunnel</code>IPv4<code>无网络访问权限</code>。</p><p>可以通过clash的connections来判断具体连接情况。</p><p>在一切设置默认的情况下，可能由于特殊的网卡驱动导致tun模式无法正常工作。</p><p>最终更改<code>TUN Mode</code> setting中DNS服务器为本地DNS和主流DNS。</p><h2 id="分析过程">分析过程</h2><h3 id="校园网">校园网</h3><p>开启<code>tun</code>后，校园网dns服务器设为<code>1.1.1.1</code>。校内网站和校外网站均无法打开。</p><p>校网dns设为自动获取，cmd中运行<code>ipconfig /all</code>查看校网分配到的dns<code>6.6.6.6</code>(当然不是真的)，然后在clash <code>tun mode</code>中添加学校的dns服务器后，国内外及校网均可正常打开。</p><h3 id="手机热点">手机热点</h3><p>手机dns为<code>211.140.11.66</code></p><p>首先把clash<code>tun mode</code>里所有dns服务器删除，但是国内外网站都可以打开，只是国外巨慢。校内网站当然是没法打开的。</p><p><code>tun mode</code>添加dns<code>1.1.1.1</code>国外网站无法打开。clash log显示</p><blockquote><p>connect error: all DNS requests failed, first error: context deadline exceeded.</p></blockquote><p><code>tun mode</code>添加<code>211.140.11.66</code>后国内外网站均可打开。并且速度正常（指不会卡顿）。</p><p>删除<code>tun mode</code>中所有dns，仅添加<code>8.8.8.8</code>，国内外网站打开正常。youtube正常，gmail卡顿，不过gmail卡顿好像是另一个问题</p><p>但是连手机热点时还是wifi图标，虽然clash的<code>connections</code>里显示的走的是tun。</p><h2 id="总结">总结</h2><p>把DNS服务器设置为常用网络的默认DNS服务器, 然后添加google的DNS服务器。</p><p>cloudflare 我日你先人。</p>]]></content>
     
     
     
