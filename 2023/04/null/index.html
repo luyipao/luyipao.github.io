@@ -13,22 +13,23 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="看到自己写出的这玩意，我就不好意思再动笔了。">
+  <meta name="description" content="希望fluid文档能多给一些例子">
   <meta name="author" content="yuedao">
   <meta name="keywords" content="">
-  <meta name="description" content="看到自己写出的这玩意，我就不好意思再动笔了。">
+  <meta name="description" content="希望fluid文档能多给一些例子">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我怎么写作">
-<meta property="og:url" content="https://luyipao.top/2022/09/howwrite/">
+<meta property="og:title" content="hexo-fluid latex配置">
+<meta property="og:url" content="https://luyipao.top/2023/04/null/">
 <meta property="og:site_name" content="月岛">
-<meta property="og:description" content="看到自己写出的这玩意，我就不好意思再动笔了。">
+<meta property="og:description" content="希望fluid文档能多给一些例子">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-09-12T00:14:30.000Z">
-<meta property="article:modified_time" content="2023-03-13T14:01:37.756Z">
+<meta property="article:published_time" content="2023-04-05T03:37:48.000Z">
+<meta property="article:modified_time" content="2023-04-05T04:16:37.431Z">
 <meta property="article:author" content="yuedao">
+<meta property="article:tag" content="hexofulidlatex">
 <meta name="twitter:card" content="summary_large_image">
   
-  <title>我怎么写作 - 月岛</title>
+  <title>hexo-fluid latex配置 - 月岛</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -206,7 +207,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="我怎么写作">
+            <span class="h2" id="subtitle" title="hexo-fluid latex配置">
               
             </span>
 
@@ -216,8 +217,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-09-12 08:14" pubdate>
-        2022年9月12日 早上
+      <time datetime="2023-04-05 11:37" pubdate>
+        2023年4月5日 中午
       </time>
     </span>
   
@@ -227,7 +228,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      596 字
+      713 字
     </span>
   
 
@@ -273,27 +274,53 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">我怎么写作</h1>
+            <h1 style="display: none">hexo-fluid latex配置</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：1 个月前
+                  本文最后更新于：11 天前
                 
               </p>
             
             <div class="markdown-body">
-              <p>看到自己写出的这玩意，我就不好意思再动笔了。</p>
+              <p>希望fluid文档能多给一些例子</p>
 <span id="more"></span>
-<p>本不期待自己能写出什么惊人的文章，只是有时对某些事情产生了些有趣的想法，觉得不妨记下来，供以后玩赏。</p>
-<p>我没写小作文的习惯，却有写日记的习惯。有些事情或感想过长，放在日记里不太合适，又比较有趣，于是单独写成一篇文章。虽然是文章，本质不过是长一点的日记。既然是日记，写的时候就特别注意“真实”，尽量白描。但写的往往有切肤之痛，容易受感情影响，逮着某部分大说特说，打乱节奏，混搅要点。所以写完后往往要增删二载，过段时间重新审视一遍，才敢拿出来见人。</p>
-<p>中国的作家我最推崇鲁迅。鲁迅的文章不算优美，但很实在，一种干了一上午农活后浑身泥巴坐在地头抽旱烟的庄稼人的实在。以一个善良正直的人拥有的羞耻心来重读过去的文章，我觉得鲁迅是能够问心无愧的，即使当时的想法十分幼稚，也不致于感到羞愧。我看自己之前的文章，常常有“羞耻心爆棚”的感觉，大多是由于卖弄才华，滥用感情，并无端下了许多不切实的论断。希望自己的文章之后也能坦荡面对，现在我是抱着这样的想法写文章，但往往也不能如愿就是了。这样想，又刻意学鲁迅的风格，可惜只学到些皮毛，被称为“攀鲁迅”。于是最近又开始重读鲁迅的文章。</p>
-<p>写出的文章总是发出来让别人看，担心自己文章浅薄无聊，没什么新东西，也没有让人看下去的趣味性，所以别人的意见是非常必要的。之前的作品听取别人的批评都进步很大，看到有些人的赞赏也とでも楽しいです。</p>
+<h1>hexo-fluid latex 配置</h1>
+<h3 id="启用katex">启用katex</h3>
+<p>参考官方<a target="_blank" rel="noopener" href="https://fluid-dev.github.io/hexo-fluid-docs/guide/#latex-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F">latex数学公式</a>文档。注意把s<strong>WARNING</strong>里面要删的东西给删了，负责可能会向我一样出现编译结果和源码同时出现的情况。比如源码为</p>
+<blockquote>
+<p><code>$\int_{-\infty}^{\infty} f(x) \mathrm{d}x$</code></p>
+</blockquote>
+<p>期待<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mi mathvariant="normal">d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{\infty}f(x)\mathrm{d}x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.2734em;vertical-align:-0.4142em;"></span><span class="mop"><span class="mop op-symbol small-op" style="margin-right:0.19445em;position:relative;top:-0.0006em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8593em;"><span style="top:-2.3442em;margin-left:-0.1945em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">∞</span></span></span></span><span style="top:-3.2579em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∞</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4142em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mord mathrm">d</span><span class="mord mathnormal">x</span></span></span></span>，但是得到了<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mi mathvariant="normal">d</mi><mi>x</mi><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mi>m</mi><mi>a</mi><mi>t</mi><mi>h</mi><mi>r</mi><mi>m</mi><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{\infty}f(x)\mathrm{d}x f(x)mathrmdx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.2734em;vertical-align:-0.4142em;"></span><span class="mop"><span class="mop op-symbol small-op" style="margin-right:0.19445em;position:relative;top:-0.0006em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8593em;"><span style="top:-2.3442em;margin-left:-0.1945em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">∞</span></span></span></span><span style="top:-3.2579em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∞</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4142em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mord mathrm">d</span><span class="mord mathnormal">x</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mord mathnormal">ma</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">m</span><span class="mord mathnormal">d</span><span class="mord mathnormal">x</span></span></span></span>。</p>
+<p>虽然说启用了<code>specific</code>，但是设置为了默认开启。</p>
+<h2 id="语法">语法</h2>
+<p><a target="_blank" rel="noopener" href="https://katex.org/docs/supported.html">katex官方语法支持</a>，我是不知道怎么做到表格内编译latex的。</p>
+<p>可以使用<code>$...$</code>内嵌到text中，其他使用都要带上<code>$$...$$</code>，例如</p>
+<p>源代码：</p>
+<figure class="highlight pgsql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">\<span class="hljs-keyword">begin</span>{<span class="hljs-keyword">array</span>}{cc}<br>	a &amp; b \\<br>	c &amp; d \\<br>\<span class="hljs-keyword">end</span>{<span class="hljs-keyword">array</span>}<br>$$<span class="pgsql"></span><br><span class="pgsql">\<span class="hljs-keyword">begin</span>{<span class="hljs-keyword">array</span>}{cc}</span><br><span class="pgsql">	a &amp; b \\</span><br><span class="pgsql">	c &amp; d \\</span><br><span class="pgsql">\<span class="hljs-keyword">end</span>{<span class="hljs-keyword">array</span>}</span><br><span class="pgsql">$$</span><br></code></pre></td></tr></tbody></table></figure>
+<p>结果：</p>
+<p>\begin{array}{cc}<br>
+a &amp; b \<br>
+c &amp; d \<br>
+\end{array}</p>
+<p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>a</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>b</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>c</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>d</mi></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{array}{cc}
+	a &amp; b \\
+	c &amp; d \\
+\end{array}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="mord"><span class="mtable"><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">a</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">b</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">d</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span></span></span></span></span></span></span></p>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/hexofulidlatex/">hexofulidlatex</a>
+                    
+                  </div>
                 
               </div>
               
@@ -308,9 +335,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/09/cyperpunk/">
+                      <a href="/2023/04/null/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">cyberpunk.md</span>
+                        <span class="hidden-mobile">无穷级数</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -318,8 +345,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/08/null/">
-                        <span class="hidden-mobile">看番经验</span>
+                      <a href="/2023/03/nasbulid/">
+                        <span class="hidden-mobile">NAS搭建</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -523,6 +550,13 @@
 
 
 
+
+  
+
+  
+    <!-- KaTeX -->
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css" />
+  
 
 
 
