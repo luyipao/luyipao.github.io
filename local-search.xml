@@ -5,8 +5,8 @@
   
   <entry>
     <title>WSL2网速慢</title>
-    <link href="/2023/04/wls-network-speed-slow/"/>
-    <url>/2023/04/wls-network-speed-slow/</url>
+    <link href="/2023/04/wsl-network-speed-slow/"/>
+    <url>/2023/04/wsl-network-speed-slow/</url>
     
     <content type="html"><![CDATA[<p>提供了两种解决方案，这两种是支持率最高的两个。在github的讨论页面上获得更多信息。</p><span id="more"></span><h1>WSL2网速慢</h1><h2 id="现象">现象</h2><p>在win上下载速度约为50Mbps，但是WSL2上只有几十几百kb/s。</p><h2 id="解决方法">解决方法</h2><p>确保为wsl2添加防火墙规则，我的防火墙配置为默认，都是允许的。wsl的路径<code>\\wsl$</code>。</p><p>下面两种方法对上传速度未见成效，好在影响不大。</p><h3 id="第一种">第一种</h3><p>这种是我使用的方法，下载速度与win一致，但是上传速度依然很慢。</p><p><a href="https://answers.microsoft.com/en-us/windows/forum/all/low-internet-speed-in-wsl-2/21524829-18be-4611-bb5f-cabccd2cae31">low internet speed in WSL 2</a></p><p>网络适配器-&gt;vEthernet (WSL)-&gt;配置</p><figure class="highlight pgsql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">Large</span> Send Offload <span class="hljs-keyword">Version</span> <span class="hljs-number">2</span> (IPv4)  <span class="hljs-keyword">disable</span><br><span class="hljs-keyword">Large</span> Send Offload <span class="hljs-keyword">Version</span> <span class="hljs-number">2</span> (IPv6)  <span class="hljs-keyword">disable</span><br></code></pre></td></tr></tbody></table></figure><p>保存。</p><h3 id="第二种">第二种</h3><p><a href="https://github.com/microsoft/WSL/issues/8171">Very slow network speeds</a></p><p>管理员运行powershell，运行下面的命令</p><blockquote><p>Disable-NetAdapterBinding -Name “vEthernet (WSL)” -ComponentID ms_tcpip6 -IncludeHidden # disable ipv6<br>Disable-NetAdapterLso -Name “vEthernet (WSL)” -IncludeHidden # Seems to disable the large packet. Didn’t tested it since mine was already disabled</p><p>Get-NetAdapterBinding -IncludeHidden -Name “vEthernet (WSL)” # Check if ipv6 was disabled<br>Get-NetAdapterAdvancedProperty -IncludeHidden -Name “vEthernet (WSL)” # Check if large packet was disabled</p></blockquote>]]></content>
     
